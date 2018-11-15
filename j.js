@@ -1,8 +1,4 @@
-const array = [1,2,3,4,5,6,7,8,9,10]
-
-const regex = /(-?[0-9]+)\s*-{1}\s*(-?[0-9]+)|(-?[0-9]+)/gm
-
-
+const array = [...Array(11).keys()]
 
 function validate() {
     
@@ -10,7 +6,7 @@ function validate() {
  
     console.log(inputValue)
 
-    if(inputValue.search('-')) {
+    if(inputValue.search('-') != -1) {
         let ranger = inputValue.split('-')
         ranger = ranger.map(range => Number(range))
         console.log(ranger)
@@ -27,9 +23,10 @@ function validate() {
         }
         console.log(availableValues)
         alert(`${availableValues} is available.`)
-    } else if(array.indexOf(inputValue) != -1) {
+    } else if
+        (array.indexOf(inputValue) != -1) {  
         alert('Already, this number is taken. Try other number')
     }  else {
-        alert(`You have entered number ${inputValue}`)
+        alert(`${inputValue} is available.`)
     }
 }
