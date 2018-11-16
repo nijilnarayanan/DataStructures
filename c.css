@@ -3,21 +3,21 @@ body {
 }
 
 .wrapper{
-    margin: 200px;
+    text-align: center;
+    margin-top: 400px;
 }
 
-.text{
+.text,.input-field{
     font-family: cursive;
     font-size: 32px;
 }
 
 .input-field{
     width: 300px;
-    font-size: 32px;
-    font-family: cursive;
-
+    margin-bottom: 8px;
 }
 
 #submit{
-    font-size: 32px;
+    font-family: cursive;
+    font-size: 26px;
 }
