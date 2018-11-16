@@ -1,6 +1,6 @@
 const array = [...Array(11).keys()]
 
-function validate() {
+function validate(){
     
     let inputValue = document.getElementById('input').value
  
@@ -15,18 +15,21 @@ function validate() {
         for(i=ranger[0]; i<=ranger[1]; i++){
             if(array.indexOf(i)== -1) {
                 availableValues.push(i)
-            }
+            }   
+        }
 
             if(availableValues.length > 0){
-                availableValues.toString()                 
-            }
-        }
-        console.log(availableValues)
-        alert(`${availableValues} is available.`)
-    } else if
-        (array.indexOf(inputValue) != -1) {  
+                availableValues.toString()  
+                console.log(availableValues)
+                alert(`${availableValues} is available.`)               
+                } else {
+                alert('Already, this number range is taken. Try other number')
+                }
+   } 
+    else if(array.indexOf(Number(inputValue)) != -1) {  
         alert('Already, this number is taken. Try other number')
-    }  else {
-        alert(`${inputValue} is available.`)
     }
+     else {
+         alert(`${inputValue} is available.`)   
+        }
 }
